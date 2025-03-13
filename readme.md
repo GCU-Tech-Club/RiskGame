@@ -5,7 +5,7 @@ A multiplayer risk game application built with React 19 and Tailwind CSS 4, feat
 The project follows this architecture pattern:
 
 ```
-RiskApp/
+RiskGame/
 ├── client/                  # Client-side React application
 │   ├── components/             # Reusable UI components
 │   ├── pages/                  # Page components (Home, Lobby, Game)
