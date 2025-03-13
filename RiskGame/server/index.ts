@@ -5,7 +5,7 @@
 
 // ex - using the shared types folder
 import { User } from '@shared/types'
-import { storeProvider } from '@server/Stores/storeProvider'
+import { storeProvider } from '@server/stores/storeProvider'
 
 const user: User = {
     id: '123'

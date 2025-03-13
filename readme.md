@@ -18,9 +18,12 @@ RiskApp/
 ├── server/                  # Server application
 │   ├── types/                  # Server-specific type definitions
 │   ├── index.ts                # Server entry point
-│   └── store/                  # State management for the server
+│   ├── game/                   # Game logic and state management
+│   ├── server/                 # Server logic and routing
+│   └── stores/                 # State management for the server
 │       ├── storeProvider.ts        # Central store management
 │       └── gameStore.ts            # Game state management
+│       └── userStore.ts            # User state management
 │
 ├── shared/                   # Shared code between client and server
 │   └── types/                  # Shared TypeScript definitions
