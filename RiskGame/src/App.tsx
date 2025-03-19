@@ -1,6 +1,7 @@
 // Importing shared types
 import { User } from '@shared/types'
-function App() {
+
+export const App = () => {
 
   const user: User = {
     id: '123'
@@ -12,5 +13,3 @@ function App() {
     </div>
   )
 }
-
-export default App
