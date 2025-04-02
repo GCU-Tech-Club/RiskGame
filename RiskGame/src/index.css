@@ -1,1 +1,26 @@
-@import 'tailwindcss'
+@import "tailwindcss";
+
+:root {
+  --player-red: #FF0000;
+  --player-orange: #FFA500;
+  --player-yellow: #FFFF00;
+  --player-green: #008000;
+  --player-blue: #0000FF;
+  --player-black: #000000;
+}
+
+@layer base {
+  .player-red { @apply text-[var(--player-red)]; }
+  .player-orange { @apply text-[var(--player-orange)]; }
+  .player-yellow { @apply text-[var(--player-yellow)]; }
+  .player-green { @apply text-[var(--player-green)]; }
+  .player-blue { @apply text-[var(--player-blue)]; }
+  .player-black { @apply text-[var(--player-black)]; }
+  
+  .bg-player-red { @apply bg-[var(--player-red)]; }
+  .bg-player-orange { @apply bg-[var(--player-orange)]; }
+  .bg-player-yellow { @apply bg-[var(--player-yellow)]; }
+  .bg-player-green { @apply bg-[var(--player-green)]; }
+  .bg-player-blue { @apply bg-[var(--player-blue)]; }
+  .bg-player-black { @apply bg-[var(--player-black)]; }
+}
