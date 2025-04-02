@@ -1,18 +1,16 @@
 // templates game store logic
 
-import EventEmitter from "node:events"
-import { GameState, GameStoreClass, gameStoreEvents } from "@server/types/interfaces/GameStore"
+import { GameState } from "@server/types/interfaces/GameStore";
+import { EventBus } from "./EventBus";
+import EventBusListener from "@server/types/interfaces/EventListener";
 
-export class GameStore extends EventEmitter<gameStoreEvents> implements GameStoreClass {
-    private state: GameState = {
-        users: []
-    }
+export class GameStore implements EventBusListener {
+  eventBus: EventBus = new EventBus();
+  private state: GameState = {
+    users: [],
+  };
 
-    constructor() {
-        super()
-    }
-
-    getState(): GameState {
-        return this.state
-    }
+  getState(): GameState {
+    return this.state;
+  }
 }

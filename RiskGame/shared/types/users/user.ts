@@ -1,8 +1,8 @@
 import { Territory } from "../game"
-import { Card } from "../game/cards"
+import { Card } from "../game/Card"
 
 export type User = {
-    id: string
+    id: number;
 }
 
 export enum COLORS {

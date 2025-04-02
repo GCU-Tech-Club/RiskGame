@@ -1,3 +1,3 @@
 export * from './map'
 export * from './meta'
-export * from './cards'
+export * from './Card'
